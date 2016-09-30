@@ -1,4 +1,5 @@
 jQuery(function($){
+    jQuery('a.task-link[href="/view/All/newJob"]').click(function(){return confirm("Willst du wirklich einen neuen Job anlegen?\nNeue Jobs sollten im Teamcity angelegt werden.\nLege hier nur im NOTFALL neue Jobs an.\nNein, ein MaRie-Projekt ist kein Nofall.");})
     var toggle = '<div class="toggle"></div><input id="cmn-toggle-7" class="cmn-toggle cmn-toggle-yes-no" type="checkbox"><label for="cmn-toggle-7" data-on="Hide" data-off="Show"></label>';
     $('#description-link').text('Edit');
     $('#description').before(toggle);
